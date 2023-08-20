@@ -1,0 +1,9 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__main--heading {
+    font-size: 20px;
+  }
+}

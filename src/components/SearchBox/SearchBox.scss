@@ -1,0 +1,37 @@
+.searchbox {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 0px;
+  border: 1px solid black;
+  padding: 10px;
+
+  &__heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__text-field {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .searchbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    padding: 10px;
+
+    &__heading {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__text-field {
+      height: 30px;
+    }
+  }
+}
