@@ -8,7 +8,7 @@ const NavMenu = () => {
         <Link to={"/"} className="nav__main--heading">
           Ticket Tracker
         </Link>
-        <Link to={"/employee"} className="nav__profiles-button">
+        <Link to={"/profiles"} className="nav__profiles-button">
           Profiles
         </Link>
         <Link to={"/employee"} className="nav__tickets-button">

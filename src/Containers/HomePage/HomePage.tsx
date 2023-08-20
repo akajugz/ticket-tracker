@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./HomePage.scss";
 import { EmployeeProps } from "./../../components/type";
 
@@ -11,8 +12,9 @@ const HomePage = ({ employee }: HomePageProps) => {
       <h2>Welcome to the ticket tracker</h2>
       <h4>The team members are listed below:</h4>
       {employee.map((member) => (
-        
-        <li>{member.name}</li>
+        <Link key={member.id} to={`/employee/${member.id}`}>
+          <p>{member.name}</p>
+        </Link>
       ))}
     </div>
   );

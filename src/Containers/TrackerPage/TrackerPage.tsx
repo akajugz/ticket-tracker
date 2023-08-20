@@ -1,10 +1,10 @@
-import team from "../../data/data";
+import {team} from "../../data/data";
 import React, { useState } from "react";
 import Employee from "../../components/Employee/Employee";
 import SearchBox from "../../components/SearchBox/SearchBox";
-import "./EmployeesPage.scss";
+import "./TrackerPage.scss"
 
-const EmployeesPage = () => {
+const TicketsPage = () => {
   const [filteredEmployees, setFilteredEmployees] = useState(team);
   const [selectedRole, setSelectedRole] = useState("");
 
@@ -69,4 +69,4 @@ const EmployeesPage = () => {
   );
 };
 
-export default EmployeesPage;
+export default TicketsPage;

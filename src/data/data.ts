@@ -1,4 +1,4 @@
-const team = [
+export const team = [
   {
     id: 1,
     name: "Alima Miller",
@@ -113,4 +113,3 @@ const team = [
     },
   },
 ];
-export default team;
