@@ -8,17 +8,23 @@ type HomePageProps = {
 
 const HomePage = ({ employee }: HomePageProps) => {
   return (
-    <div>
-      <h2>Welcome to the ticket tracker</h2>
-      <h4>The team members are listed below:</h4>
+    <div className="homepage">
+      <h2 className="homepage__heading">Welcome to the ticket tracker!</h2>
+      <h4 className="homepage__subheading">
+        The team members are listed below:
+      </h4>
+      <div className="home-employees">
       {employee.map((member) => (
-        <NavLink key={member.id} to={`/profiles/${member.id}`}>
-          <p>{member.name}</p>
-        </NavLink>
+        <>
+          <NavLink key={member.id} to={`/profiles/${member.id}`}>
+            <img className="home-employees__image" src={member.profile.profilePicture} alt="Profile Picture" />
+            <p className="home-employees__names">{member.name}</p>
+          </NavLink>
+        </>
       ))}
+      </div>
     </div>
   );
 };
-
 
 export default HomePage;

@@ -2,6 +2,21 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-
+  background-color: rgb(180, 157, 203);
   
+  &__main-heading {
+    font-size: 30px;
+  }
+
+  &__home-button{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  &__tickets-button {
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
 }

@@ -5,7 +5,7 @@ const NavMenu = () => {
   return (
     <>
       <div className="nav">
-        <h2 className="nav__main--heading">Ticket Tracker</h2>
+        <h2 className="nav__main-heading">Ticket Tracker</h2>
         <Link to={"/"} className="nav__home-button">
           Home
         </Link>

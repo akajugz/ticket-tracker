@@ -15,6 +15,7 @@ const App = () => {
           <Routes>
             <Route key="home" path="/" element={<HomePage employee={team} />} />
             <Route
+              key="profiles"
               path="/profiles/:id"
               element={<Profiles team={team} />} // Use the Profiles component directly
             />

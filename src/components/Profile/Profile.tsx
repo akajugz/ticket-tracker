@@ -12,14 +12,18 @@ const Profiles = () => {
 
   return (
     <>
-      <div className="employees">
-        <h3 className="employees__name">{employee.name}</h3>
-        <p className="employees__role">{employee.role}</p>
-        <div className="employees__profile">
+      <div className="profile">
+        <h3 className="profile__name">{employee.name}</h3>
+        <img
+          className="profile__image"
+          src={employee.profile.profilePicture}
+          alt="Profile"
+        />
+        <div className="profile__text">
+          <p>{employee.role}</p>
           <p>Experience: {employee.profile.experience}</p>
           <p>Department: {employee.profile.department}</p>
           <p>Tech Stack: {employee.profile.techstack.join(", ")}</p>
-          <img src={employee.profile.profilePicture} alt="Profile" />
         </div>
       </div>
     </>
