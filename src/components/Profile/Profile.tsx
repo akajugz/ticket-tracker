@@ -1,8 +1,12 @@
 import { useParams } from "react-router-dom";
 import "./Profile.scss";
-import { team } from "../../data/data";
+import { EmployeeProps } from "../type";
 
-const Profiles = () => {
+type ProfileProps ={
+  team: EmployeeProps[]
+}
+
+const Profiles = ({team} : ProfileProps) => {
   const { id } = useParams();
   const employee = team.find((member) => member.id === Number(id));
 
