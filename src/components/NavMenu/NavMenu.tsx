@@ -5,11 +5,9 @@ const NavMenu = () => {
   return (
     <>
       <div className="nav">
-        <Link to={"/"} className="nav__main--heading">
-          Ticket Tracker
-        </Link>
-        <Link to={"/profiles"} className="nav__profiles-button">
-          Profiles
+        <h2 className="nav__main--heading">Ticket Tracker</h2>
+        <Link to={"/"} className="nav__home-button">
+          Home
         </Link>
         <Link to={"/employee"} className="nav__tickets-button">
           Tickets

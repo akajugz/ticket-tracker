@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Employee.scss";
 
@@ -17,7 +18,7 @@ type EmployeeProps = {
 Create a function that takes the type as a para, deconstructed 
 create a counter using useState
 */
-const Employee = ({ name, role }: EmployeeProps) => {
+const Employee = ({ id, name, role }: EmployeeProps) => {
   const [ticketCount, setTicketCount] = useState(0);
 
   const ticketCountIncrement = () => {
@@ -33,7 +34,9 @@ const Employee = ({ name, role }: EmployeeProps) => {
   return (
     <>
       <div className="employees">
-        <h3 className="employees__name">{name}</h3>
+        <h3 className="employees__name">
+          <Link to={`/profiles/${id}`}>{name}</Link>
+        </h3>
         <p className="employees__role">{role}</p>
 
         <button
